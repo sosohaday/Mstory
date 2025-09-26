@@ -3,50 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>오늘의 선행 기록</title>
+    <title>Mstory</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>나의 따뜻한 하루</h1>
-            <p>오늘의 선행과 받은 도움을 기록해보세요.</p>
+            <h1>나와 얘기하기</h1>
+            <p>오늘 있었던일을 답하기</p>
         </header>
         <main>
             <form id="record-form">
                 <div class="form-group">
-                    <label for="type">종류</label>
+                    <label for="type">무슨일이 이었나요?</label>
                     <select id="type" name="type">
-                        <option value="deed">😊 선행했어요</option>
-                        <option value="help">💖 도움받았어요</option>
+                        <option value="deed">좋은일이요</option>
+                        <option value="help">나쁜일이요</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="date">날짜</label>
+                    <label for="date">그날은 언제인가요?</label>
                     <input type="date" id="date" name="date" required>
                 </div>
                 <div class="form-group">
-                    <label for="content">내용</label>
-                    <textarea id="content" name="content" rows="4" placeholder="어떤 일이 있었나요?" required></textarea>
+                    <label for="content">자세히 말씀해 주시겠어요?</label>
+                    <textarea id="content" name="content" rows="4" placeholder="자세히 적어주시겠어요?" required></textarea>
                 </div>
                 <div class="form-group">
-                    <label for="reaction">상대방의 반응 (선택)</label>
-                    <input type="text" id="reaction" name="reaction" placeholder="상대방은 어떻게 반응했나요?">
+                    <label for="reaction">누구와 함께 했었나요? (아 말씀 안해주셔도 괜찮아요)</label>
+                    <input type="text" id="reaction" name="reaction" placeholder="상대방은 어떻게 반응은요?">
                 </div>
                 <div class="form-group">
-                    <label>오늘의 기분</label>
+                    <label>당신의 기분은 어떠한가여?</label>
+                  <input type="text" id="reaction1" name="reaction1" placeholder="오늘은 어떠한 기분이신가요??">
                     <div class="mood-selector">
                         <input type="radio" id="mood-happy" name="mood" value="행복" checked>
-                        <label for="mood-happy">😄 행복</label>
+                        <label for="mood-happy">행복한것 같아요</label>
                         <input type="radio" id="mood-proud" name="mood" value="보통">
-                        <label for="mood-proud">😐 보통</label>
+                        <label for="mood-proud">보통이에요</label>
                         <input type="radio" id="mood-thankful" name="mood" value="우울">
-                        <label for="mood-thankful">😔 우울</label>
+                        <label for="mood-thankful">우울해요</label>
                         <input type="radio" id="mood-moved" name="mood" value="분노">
-                        <label for="mood-moved">😡 분노</label>
+                        <label for="mood-moved">화가나요</label>
                     </div>
                 </div>
-                <button type="submit">기록하기</button>
+                <button type="submit">답하기</button>
             </form>
 
             <section class="stats-section">
