@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
         row.classList.add('record-row');
 
         const moodEmojis = { '행복': '😄', '보통': '😐', '우울': '😔', '분노': '😡' };
-        const typeText = { 'deed': '😊 선행했어요', 'help': '💖 도움받았어요' };
+        const typeText = { 'deed': '좋은일', 'help': '나쁜일' };
 
         row.innerHTML = `
             <div class="record-type ${record.Type}">${typeText[record.Type] || record.Type}</div>
