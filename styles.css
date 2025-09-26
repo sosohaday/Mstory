@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
 
 :root {
-    --primary-color: #FFC107; /* Amber */
-    --secondary-color: #FFAB91; /* Light Pastel Coral */
-    --background-color: #FFF8E1; /* Light Cream */
+    --primary-color: #2196F3; /* Blue */
+    --secondary-color: #64B5F6; /* Light Blue */
+    --background-color: #E3F2FD; /* Very Light Blue */
     --card-background: #FFFFFF;
     --text-color: #424242;
     --border-color: #E0E0E0;
@@ -109,7 +109,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #FF8A65; /* Deeper Pastel Coral */
+    background-color: #1976D2; /* Darker Blue */
 }
 
 .chart-container {
@@ -163,7 +163,7 @@ button[type="submit"]:hover {
 #export-excel {
     padding: 8px 15px;
     background-color: var(--primary-color);
-    color: var(--text-color);
+    color: var(--card-background);
     border: none;
     border-radius: 8px;
     font-size: 0.9rem;
@@ -173,7 +173,7 @@ button[type="submit"]:hover {
 }
 
 #export-excel:hover {
-    background-color: #FFD54F; /* Lighter Amber */
+    background-color: #42A5F5; /* Lighter Blue */
 }
 
 .records-section h2 {
@@ -206,25 +206,21 @@ button[type="submit"]:hover {
     border-bottom: 2px solid var(--border-color);
 }
 
-.records-header > div:nth-child(3) {
-    /* 반응 헤더 */
-}
-
 .record-row:last-child {
     border-bottom: none;
 }
 
 .record-row:hover {
-    background-color: #fefcf5;
+    background-color: #F1F8FF;
 }
 
 .record-type.deed {
-    color: #FFC107;
+    color: #2196F3;
     font-weight: 700;
 }
 
 .record-type.help {
-    color: #FF7043;
+    color: #1565C0;
     font-weight: 700;
 }
 
@@ -297,4 +293,5 @@ footer {
     .record-date, .record-mood {
         text-align: left;
     }
+  
 }
